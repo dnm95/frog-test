@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import { Row } from "reactstrap";
 
 export const Banner = styled.div`
   height: 100vh;
-  background: linear-gradient(202.17deg, #FF00D6 8.58%, #FF4D00 91.42%);
+  background: linear-gradient(179.47deg, #000000 0.45%, rgba(196, 196, 196, 0) 99.55%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,6 +25,15 @@ export const FixedFooter = styled.div`
   padding: 0px 15px;
   padding-top: 0.5rem;
   padding-bottom: 1rem;
+`;
+
+export const FullHeightCenterRow = styled(Row)`
+  height: 100vh;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    height: auto;
+    margin-top: 4rem;
+  }
 `;
 
 export default Banner;

@@ -2,14 +2,14 @@ import React from "react";
 import { Container, Col } from "reactstrap";
 import { useHistory } from "react-router-dom";
 import { ArrowReturnLeft } from "react-bootstrap-icons";
-import LoginForm from "../../components/forms/Login";
+import RegisterForm from "../../components/forms/Register";
 import { FormExtraLinks } from "../../components/forms/styles";
 import { FullHeightCenterRow } from "../../components/commons/styles";
 
-function LoginPage() {
+function RegisterPage() {
   const history = useHistory();
 
-  const onSignIn = () => history.push("/profile");
+  const onRegister = () => history.push("/profile");
 
   return (
     <Container>
@@ -22,10 +22,10 @@ function LoginPage() {
             onClick={() => history.push("/")}
             style={{ cursor: "pointer" }}
           />
-          <h1 className="mb-4">Log In</h1>
-          <LoginForm onSubmit={onSignIn} />
-          <FormExtraLinks onClick={() => history.push("/register")}>
-            Sign up
+          <h1 className="mb-4">Register</h1>
+          <RegisterForm onSubmit={onRegister} />
+          <FormExtraLinks onClick={() => history.push("/login")}>
+            Sign in
           </FormExtraLinks>
         </Col>
       </FullHeightCenterRow>
@@ -33,4 +33,4 @@ function LoginPage() {
   )
 }
 
-export default LoginPage;
+export default RegisterPage;

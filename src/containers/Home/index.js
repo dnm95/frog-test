@@ -10,19 +10,21 @@ function Home() {
   return (
     <Banner>
       <h2>photo</h2>
-      <Row className="mt-4">
-        <Col>
-          <Button secondary onClick={() => history.push("/login")}>
-            Log in
-          </Button>
-        </Col>
-        <Col>
-          <Button>
-            Register
-          </Button>
-        </Col>
-      </Row>
-      <FixedFooter>
+      <div className="d-none d-sm-block">
+        <Row className="mt-4">
+          <Col>
+            <Button secondary onClick={() => history.push("/login")}>
+              Log in
+            </Button>
+          </Col>
+          <Col>
+            <Button onClick={() => history.push("/register")}>
+              Register
+            </Button>
+          </Col>
+        </Row>
+      </div>      
+      <FixedFooter className="d-block d-sm-none">
         <Row className="mt-4">
           <Col>
             <Button secondary block onClick={() => history.push("/login")}>
@@ -30,7 +32,7 @@ function Home() {
             </Button>
           </Col>
           <Col>
-            <Button block>
+            <Button block onClick={() => history.push("/register")}>
               Register
             </Button>
           </Col>

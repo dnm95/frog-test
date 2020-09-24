@@ -9,7 +9,7 @@ const initialState = {
   password: "",
 }
 
-function LoginForm(props) {
+function RegisterForm(props) {
   const { onSubmit } = props;
   const [data, setData] = useState(initialState);
 
@@ -47,14 +47,14 @@ function LoginForm(props) {
       </FormGroup>
 
       <Button type="submit" block>
-        Log in
+        Sign up
       </Button>
     </Form>
   );
 }
 
-LoginForm.propTypes = {
+RegisterForm.propTypes = {
   onSubmit: func.isRequired,
 };
 
-export default LoginForm;
+export default RegisterForm;
