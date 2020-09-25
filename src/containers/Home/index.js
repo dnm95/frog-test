@@ -25,7 +25,7 @@ function Home() {
         </Row>
       </div>      
       <FixedFooter className="d-block d-sm-none">
-        <Row className="mt-4">
+        <Row>
           <Col>
             <Button secondary block onClick={() => history.push("/login")}>
               Log in

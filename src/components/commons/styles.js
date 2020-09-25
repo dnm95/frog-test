@@ -23,8 +23,11 @@ export const FixedFooter = styled.div`
   bottom: 0;
   width: 100%;
   padding: 0px 15px;
-  padding-top: 0.5rem;
+  padding-top: 1.5rem;
   padding-bottom: 1rem;
+  ${props => (props.withBorder && `
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+  `)}
 `;
 
 export const FullHeightCenterRow = styled(Row)`
