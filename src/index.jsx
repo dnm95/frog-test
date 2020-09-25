@@ -4,6 +4,11 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
+/*
+  BrowserRouter is used for all the React navigation.
+  App file contains de main layout and global config for the web app.
+*/
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>

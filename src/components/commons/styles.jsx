@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import { Row } from "reactstrap";
 
+/*
+  Common styled components used in all the web app.
+*/
+
 export const Banner = styled.div`
   height: 100vh;
   background: linear-gradient(179.47deg, #000000 0.45%, rgba(196, 196, 196, 0) 99.55%);

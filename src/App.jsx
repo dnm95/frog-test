@@ -8,6 +8,15 @@ import Account from "./containers/Account";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
+/*
+  Switch and Route from react-router-dom help us to control and mantain all the routes for the project.
+  createGlobalStyle is used for settling global styles, in this case for font size and blocking
+  horizontal overflow.
+  Home, Login, Register and Account are the main containers or pages that will be rendered depending
+  on the route.
+  The last import is for the bootstap styles.
+*/
+
 const GlobalStyle = createGlobalStyle`
   body {
     overflow-x: hidden;

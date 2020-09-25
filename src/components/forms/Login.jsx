@@ -4,6 +4,13 @@ import { Form, FormGroup } from "reactstrap";
 import { Input } from "./styles";
 import Button from "../commons/Button";
 
+/*
+  Component that renders the basic sign in form, it validates that the inputs
+  are not empty, it uses react hooks "useState" for maintinig the data on user
+  interaction, once the form is ready in executes the onSubmit function that comes
+  from the props component.
+*/
+
 const initialState = {
   email: "",
   password: "",

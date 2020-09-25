@@ -5,6 +5,10 @@ import {
   Chat, Person,
 } from "react-bootstrap-icons";
 
+/*
+  Component for rendering the bottom nav once the user is authenticated,
+*/
+
 const BottomNav = () => (
   <Row>
     <Col className="text-center">

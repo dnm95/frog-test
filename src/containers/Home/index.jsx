@@ -5,6 +5,13 @@ import styled from "styled-components";
 import Button from "../../components/commons/Button";
 import { Banner, FixedFooter } from "../../components/commons/styles";
 
+/*
+  Row, Col are from the bootstrap package for react.
+  useHistory is the hook for interacting with the navigation.
+  Button is a common component for rendering the basic two buttons that appears in the figma mockup.
+  Banner and FixedFooter are common components for rendering a basic banner and a fixed footer for mobile.
+*/
+
 const Logo = styled.span`
   color: #FFF;
 `;

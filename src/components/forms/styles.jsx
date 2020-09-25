@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+/*
+  Styled components that are used mainly in all the forms,
+  here you can find the Input global style for thw web app.
+*/
+
 export const Input = styled.input`
   background: #FFFFFF;
   border: 2px solid #000000;

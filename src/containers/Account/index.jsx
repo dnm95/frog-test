@@ -7,6 +7,16 @@ import Button from "../../components/commons/Button";
 import BottomNav from "../../components/commons/BottomNav";
 import { FixedFooter } from "../../components/commons/styles";
 
+/*
+  Container, Col are from the bootstrap package for react.
+  useHistory is the hook for interacting with the navigation.
+  Button is a common component for rendering the basic two buttons that appears in the figma mockup.
+  FormExtraLinks and FullHeightCenterRow are common components for rendering the links style and the
+  height center row for centering a container/block in the middle of the screen.
+  ArrowReturnLeft is a component based on the bootstrap icons.
+  RegisterForm is a common form for making the sign up.
+*/
+
 const Logout = styled.span`
   color: #FF4D00;
   font-size: 16px;

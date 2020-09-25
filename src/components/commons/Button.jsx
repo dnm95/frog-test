@@ -2,6 +2,13 @@ import React from "react";
 import { node, func, bool, string, oneOf } from "prop-types";
 import styled, { css } from "styled-components";
 
+/*
+  Button component for rendering the two different types of button
+  based on the figma design, this component receive different props
+  like primary/secondary type, block(full width), onClick, type,
+  disabled, loading, and additional styles.
+*/
+
 const buttonCss = css`
   background: #000000;
   border-radius: 6px;
