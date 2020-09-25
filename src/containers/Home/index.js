@@ -1,15 +1,23 @@
 import React from "react";
 import { Row, Col } from "reactstrap";
 import { useHistory } from "react-router-dom";
+import styled from "styled-components";
 import Button from "../../components/commons/Button";
 import { Banner, FixedFooter } from "../../components/commons/styles";
+
+const Logo = styled.span`
+  color: #FFF;
+`;
 
 function Home() {
   const history = useHistory();
 
   return (
     <Banner>
-      <h2>photo</h2>
+      <h2>
+        <Logo className="pr-2">{"<>"}</Logo>
+        photo
+      </h2>
       <div className="d-none d-sm-block">
         <Row className="mt-4">
           <Col>
